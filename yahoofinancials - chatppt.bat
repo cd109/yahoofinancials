@@ -6,10 +6,11 @@ SET PATH=%PATH%;D:\ALL_2\Python311;D:\ALL_2\Python311\Scripts;D:\ALL_2\chocolate
 ::pip install matplotlib
 ::pip install seaborn
 
+::pip install openai
+::pip install python-pptx
+
 cd yahoofinancials
 
-::streamlit run app.py
-
-streamlit run iris_eda_app.py
+python chatppt.py
 
 pause

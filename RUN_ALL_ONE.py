@@ -2,8 +2,8 @@ from yahoofinancials import YahooFinancials
 import fun
 
 def rum_YYYY():
-    stockCode  ='COMM'
-    stockName  = 'CommScope'
+    stockCode  ='GN.CO'
+    stockName  = 'GN AUDIO (DK)'
     fin = YahooFinancials(stockCode)
     currency = fin.get_currency()
     fun.GET_annual_FILE('IS' , stockCode , stockName , currency , 'incomeStatementHistory'  )
@@ -11,8 +11,8 @@ def rum_YYYY():
     fun.GET_annual_FILE('BS' , stockCode , stockName , currency , 'balanceSheetHistory'   )
 
 def rum_QQQQ():
-    stockCode  ='COMM'
-    stockName  = 'CommScope'
+    stockCode  ='GN.CO'
+    stockName  = 'GN AUDIO (DK)'
     fin = YahooFinancials(stockCode)
     currency = fin.get_currency()
     fun.GET_quarterly_FILE('IS' , stockCode , stockName , currency , 'incomeStatementHistoryQuarterly'  )
