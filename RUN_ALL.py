@@ -16,7 +16,7 @@ def GET_annual_FILE(dataType , stockCode , stockName , currency , financial_stmt
     df = df.rename_axis(financial_stmts).reset_index()
     df.insert(0, 'ticker', stockCode)
     df.drop(df.columns[[0]], axis=1, inplace=True)
-    df.to_excel('D:\\ALL_2\\yahoofinancials\\FIN_0617\\yahooExport_annual_'+ dataType + '_' + stockCode + '.xlsx', sheet_name = sheet_name)
+    df.to_excel('D:\\ALL_2\\yahoofinancials\\ \\yahooExport_annual_'+ dataType + '_' + stockCode + '.xlsx', sheet_name = sheet_name)
 
 def GET_quarterly_FILE(dataType , stockCode , stockName , currency , financial_stmts):
     sheet_name = stockCode + '-' + currency + '-' + stockName
@@ -31,7 +31,7 @@ def GET_quarterly_FILE(dataType , stockCode , stockName , currency , financial_s
        df = df.rename_axis(financial_stmts).reset_index()
        df.insert(0, 'ticker', stockCode)
        df.drop(df.columns[[0]], axis=1, inplace=True)
-       df.to_excel('D:\\ALL_2\\yahoofinancials\\FIN_0617\\yahooExport_Quarterly_'+ dataType + '_' + stockCode + '.xlsx', sheet_name = sheet_name)
+       df.to_excel('D:\\ALL_2\\yahoofinancials\\FIN_0703\\yahooExport_Quarterly_'+ dataType + '_' + stockCode + '.xlsx', sheet_name = sheet_name)
     else:   
        print(stockCode + " is pass !!")
 
@@ -76,4 +76,4 @@ def rum_QQQQ():
 
 if __name__ == '__main__':
     rum_YYYY()
-   # rum_QQQQ()
+    rum_QQQQ()
